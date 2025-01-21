@@ -1,3 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+  box-sizing: border-box;
+  /* @apply max-sm:p-[1rem] */
+}
+
+section {
+  @apply max-sm:p-4 p-8
+}
+
+.headet_Text {
+  @apply font-poppins font-medium max-sm:text-xl text-5xl text-black;
+}
+
+.text {
+  @apply font-mulish text-lg text-sec;
+  line-height: 30px;
+}
+
+.menu {
+  @apply bg-white absolute h-sidebar w-full top-0 left-0 pt-32 pb-10 flex flex-col justify-between transition-all duration-200
+  md:flex-row md:bg-transparent md:w-auto md:relative md:p-0 md:h-auto md:items-center md:translate-x-0
+}
+
+
+.menu_link {
+  @apply font-inter font-thin text-base text-sec
+}
+
+.menu_btn {
+  background: linear-gradient(to right, rgb(232 168 240),  rgba(251, 237, 233, 1));
+  height: 56px;
+}
+
+.flex_row_btw {
+  @apply flex justify-between items-center
+}
+
+
