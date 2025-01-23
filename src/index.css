@@ -20,13 +20,23 @@
   box-sizing: border-box;
 }
 
+section {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 2rem ;
+}
+
+
+.header {
+  @apply min-h-screen overflow-hidden bg-homeHeader bg-cover bg-center px-8 pt-28 max-sm:px-4 md:px-24 lg:px-0
+}
 
   .header_text {
-    @apply font-poppins font-medium text-5xl max-sm:text-2xl text-black;
+    @apply font-poppins font-medium text-5xl leading-[58px] max-sm:text-2xl text-black;
   }
 
   .icon_wrapper {
-    @apply w-9 h-9 lg:w-14 lg:h-14 bg-orange-400 rounded-md p-2
+    @apply w-9 h-9 lg:w-11 lg:h-11 bg-orange-400 flex justify-center rounded-md p-2
   }
   
   .text {

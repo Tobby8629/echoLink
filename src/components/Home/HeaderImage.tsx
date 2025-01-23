@@ -3,8 +3,8 @@ import {phone} from "../../../public/images"
 
 const HeaderImage = () => {
   return (
-    <div className=" relative w-[370px] mx-auto">
-      <img src={phone} className=" w-full object-fill"/>
+    <div className=" relative w-[370px] lg:w-[600px] mx-auto">
+      <img src={phone} className=" w-full"/>
       <div className="bg-white p-2 rounded-md w-28 absolute top-[40%] right-[17%]">
         <img src={activity} className=" "/>
       </div>

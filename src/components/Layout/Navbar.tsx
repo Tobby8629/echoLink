@@ -35,7 +35,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed w-full flex_row_btw max-sm:p-4 p-8  ${isScrolled ? "bg-misc" : "bg-transparent"}`}>
+    <nav className={`fixed w-full max-w-7xl p-8 left-0 right-0 mx-auto flex_row_btw max-sm:p-4 py-8  ${isScrolled ? "bg-misc" : "bg-transparent"}`}>
       <img src={logo} alt="echolink" />
       <div className={`${visible ? " translate-x-0 block" : "-translate-x-[800px] hidden" } menu`}>
         <div className=" flex flex-col h-full justify-between md:flex-row md:items-center">
