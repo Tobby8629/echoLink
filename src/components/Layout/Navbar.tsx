@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom"
 import { logo, } from "../../../public/svgs"
 import { menuLink } from "../../constant"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Cancel from "../../assets/Cancel"
 import Menu from "../../assets/Menu"
 import { useGSAP } from "@gsap/react"
@@ -23,8 +23,19 @@ const Navbar = () => {
     );
   },[visible])
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 40); // Change background when scrolled more than 40px
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className="fixed w-full flex_row_btw max-sm:p-4 p-8 ">
+    <nav className={`fixed w-full flex_row_btw max-sm:p-4 p-8  ${isScrolled ? "bg-misc" : "bg-transparent"}`}>
       <img src={logo} alt="echolink" />
       <div className={`${visible ? " translate-x-0 block" : "-translate-x-[800px] hidden" } menu`}>
         <div className=" flex flex-col h-full justify-between md:flex-row md:items-center">

@@ -5,46 +5,53 @@
 @tailwind components;
 @tailwind utilities;
 
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 #root {
   /* max-width: 1280px; */
   margin: 0 auto;
-  /* padding: 2rem; */
+  padding: 0;
   text-align: center;
   box-sizing: border-box;
-  /* @apply max-sm:p-[1rem] */
-}
-
-section {
-  @apply max-sm:p-4 p-8
-}
-
-.headet_Text {
-  @apply font-poppins font-medium max-sm:text-xl text-5xl text-black;
-}
-
-.text {
-  @apply font-mulish text-lg text-sec;
-  line-height: 30px;
-}
-
-.menu {
-  @apply bg-white absolute h-screen w-full top-0 left-0 py-[8rem] flex flex-col justify-between transition-all duration-200
-  md:flex-row md:bg-transparent md:w-auto md:relative md:p-0 md:h-auto md:items-center md:translate-x-0
 }
 
 
-.menu_link {
-  @apply font-inter font-thin text-base text-sec
-}
+  .header_text {
+    @apply font-poppins font-medium text-5xl max-sm:text-2xl text-black;
+  }
+
+  .icon_wrapper {
+    @apply w-9 h-9 lg:w-14 lg:h-14 bg-orange-400 rounded-md p-2
+  }
+  
+  .text {
+    @apply font-mulish text-lg text-sec;
+    line-height: 30px;
+  }
+  
+  .menu {
+    @apply bg-white absolute h-screen w-full top-0 left-0 py-[8rem] flex flex-col justify-between transition-all duration-200
+    md:flex-row md:bg-transparent md:w-auto md:relative md:p-0 md:h-auto md:items-center md:translate-x-0
+  }
+  
+  
+  .menu_link {
+    @apply font-inter font-thin text-base text-sec
+  }
+  
+  .flex_row_btw {
+    @apply flex justify-between items-center
+  }
 
 .menu_btn {
   background: linear-gradient(to right, rgb(232 168 240),  rgba(251, 237, 233, 1));
   height: 56px;
 }
 
-.flex_row_btw {
-  @apply flex justify-between items-center
-}
 
 
