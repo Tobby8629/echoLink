@@ -5,6 +5,10 @@ import calender from './calender.svg'
 import header_note from './header_note.svg'
 import logo from './logo.svg'
 import quick_chat from './quick_chat.svg'
+import calenderTwo from './calender2.svg'
+import collaboration from './collaboration.svg'
+import team from './team.svg'
+import edge from './edge.svg'
 
 export {
   activity,
@@ -14,4 +18,8 @@ export {
   header_note,
   logo,
   quick_chat,
+  calenderTwo,
+  collaboration,
+  team,
+  edge,
 }

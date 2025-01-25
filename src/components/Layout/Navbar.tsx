@@ -35,7 +35,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed w-full max-w-7xl p-8 left-0 right-0 mx-auto flex_row_btw max-sm:p-4 py-8  ${isScrolled ? "bg-misc" : "bg-transparent"}`}>
+    <div className={`fixed z-[999] w-full right-0 left-0 ${isScrolled ? "bg-misc" : "bg-transparent"}`}>
+     <nav className={`max-w-7xl mx-auto flex_row_btw max-sm:p-4 md:p-[2rem]  `}>
       <img src={logo} alt="echolink" />
       <div className={`${visible ? " translate-x-0 block" : "-translate-x-[800px] hidden" } menu`}>
         <div className=" flex flex-col h-full justify-between md:flex-row md:items-center">
@@ -68,7 +69,9 @@ const Navbar = () => {
       <div id="menu" className=" z-[99] md:hidden opacity-0" onClick={()=> setVisible(!visible)}>
         {visible ? <Cancel fill={"rgba(90, 79, 243, 1)"} width={"40px"} height={"40px"} /> : <Menu fill={"rgba(90, 79, 243, 1)"} width={"50px"} height={"30px"}/>}
       </div>
-    </nav>
+     </nav>
+    </div>
+   
   )
 }
 

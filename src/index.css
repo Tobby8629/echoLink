@@ -28,11 +28,16 @@ section {
 
 
 .header {
-  @apply min-h-screen overflow-hidden bg-homeHeader bg-cover bg-center px-8 pt-28 max-sm:px-4 md:px-24 lg:px-0
+  @apply min-h-screen overflow-hidden bg-homeHeader bg-cover bg-center px-8 pt-32 max-sm:px-4 md:px-24 lg:px-0
 }
 
   .header_text {
-    @apply font-poppins font-medium text-5xl leading-[58px] max-sm:text-2xl text-black;
+    @apply relative font-poppins font-medium text-5xl leading-[58px] max-sm:text-2xl text-black;
+  }
+
+  .header_text::before {
+    @apply  lg:absolute top-[-10px] w-[168px] h-[5px] bg-pry rounded-md lg:block;
+    content: "";
   }
 
   .icon_wrapper {
@@ -58,10 +63,16 @@ section {
     @apply flex justify-between items-center
   }
 
+  .top_absolute {
+    @apply hidden md:block md:absolute md:-top-[1.7rem] lg:-top-[2.3rem]  -right-[3.7rem]  xl:-right-9
+  }
+
+  .bottom_absolute {
+    @apply hidden md:block md:absolute -bottom-[6.5rem] -left-[3.8rem] xl:-left-[2.2rem]  
+  }
+  
+
 .menu_btn {
   background: linear-gradient(to right, rgb(232 168 240),  rgba(251, 237, 233, 1));
   height: 56px;
 }
-
-
-
