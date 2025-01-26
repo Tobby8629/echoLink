@@ -76,3 +76,13 @@ section {
   background: linear-gradient(to right, rgb(232 168 240),  rgba(251, 237, 233, 1));
   height: 56px;
 }
+
+.wpsau_swiper {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .wpsau_swiper {
+    width: calc(100% - 400px);
+  }  
+}

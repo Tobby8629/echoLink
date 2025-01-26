@@ -9,6 +9,8 @@ import calenderTwo from './calender2.svg'
 import collaboration from './collaboration.svg'
 import team from './team.svg'
 import edge from './edge.svg'
+import stars from './stars.svg'
+
 
 export {
   activity,
@@ -22,4 +24,5 @@ export {
   collaboration,
   team,
   edge,
+  stars,
 }

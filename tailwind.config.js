@@ -14,6 +14,7 @@ export default {
       },
       colors: {
         pry: "rgba(90, 79, 243, 1)",
+        pry_light: "rgba(243, 229, 245, 1)",
         sec: "rgba(51, 59, 73, 0.7)",
         misc: " rgba(251, 237, 233, 1)",
       },

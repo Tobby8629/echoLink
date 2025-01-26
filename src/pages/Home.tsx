@@ -2,6 +2,7 @@ import Header from "../components/Home/Header"
 import HeaderImage from "../components/Home/HeaderImage"
 import SearchInput from "../components/Home/SearchInput"
 import SectDetails from "../components/Home/SectDetails"
+import WPSAU from "../components/Home/WPSAU"
 import { homeSec } from "../constant"
 
 const Home = () => {
@@ -29,6 +30,11 @@ const Home = () => {
             </div>
           ))}
       </section>
+      <div className="bg-pry_light py-10">
+        <section>
+          <WPSAU />
+        </section>
+      </div>
     </main>
       
    
