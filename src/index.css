@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+@import 'swiper/css/scrollbar';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -31,7 +34,8 @@ section {
   @apply min-h-screen overflow-hidden bg-homeHeader bg-cover bg-center px-8 pt-32 max-sm:px-4 md:px-24 lg:px-0
 }
 
-  .header_text {
+  .header_text,
+  .header_text_regular {
     @apply relative font-poppins font-medium text-5xl leading-[58px] max-sm:text-2xl text-black;
   }
 
@@ -52,6 +56,13 @@ section {
   .menu {
     @apply bg-white absolute h-screen w-full top-0 left-0 py-[8rem] flex flex-col justify-between transition-all duration-200
     md:flex-row md:bg-transparent md:w-auto md:relative md:p-0 md:h-auto md:items-center md:translate-x-0
+  }
+
+  .team-bg {
+    height: 20%;
+    background: linear-gradient( rgba(251, 237, 233, 1), rgb(239, 195, 245));
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
   
   

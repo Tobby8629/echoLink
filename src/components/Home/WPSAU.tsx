@@ -1,20 +1,18 @@
 import { useRef, useState } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react';;
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import useResize from '../hooks/useResize';
 import { stars } from '../../../public/svgs';
 import Header from './Header';
+import { Swiper as SwiperCore } from 'swiper';
 
 
 
 const WPSAU = () => {
   const cards = Array.from({ length: 6 })
   const {windowSize} = useResize()
-  const swiperRef = useRef<any>(null)
+  const swiperRef = useRef<SwiperCore | null>(null);
   const [activeIndex, setActiveIndex] = useState(0)
+
 
   return (
     <div className='max-md:flex-col flex flex-row justify-between overflow-hidden'>
@@ -50,8 +48,8 @@ const WPSAU = () => {
         className="wpsau_swiper"
         data-aos={"zoom-in"}
       >
-        {cards.map((e, index)=>(
-          <SwiperSlide key={(e, index.toString())} className='bg-white p-5 max-sm:min-h-[200px]' >
+        {cards.map((_, index)=>(
+          <SwiperSlide key={(index.toString())} className='bg-white p-5 max-sm:min-h-[200px]' >
             <img src={stars} alt='rate'/>
           </SwiperSlide>
           ))}   

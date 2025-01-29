@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import { logo, } from "../../../public/svgs"
 import { menuLink } from "../../constant"
 import { useEffect, useState } from "react"
@@ -6,6 +6,7 @@ import Cancel from "../../assets/Cancel"
 import Menu from "../../assets/Menu"
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
+import Button from "../reuseable/Button"
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false)
@@ -56,14 +57,7 @@ const Navbar = () => {
               </NavLink>
             ))}
           </ul>
-          <button className="menu_btn text-center w-1/2 mx-auto rounded-lg">
-            <Link 
-            className="!text-black menu_link"
-            to={'/'}
-            >
-              Get access
-            </Link>
-          </button>
+          <Button link="/" linkName="Get Access"/>
         </div>
       </div>
       <div id="menu" className=" z-[99] md:hidden opacity-0" onClick={()=> setVisible(!visible)}>

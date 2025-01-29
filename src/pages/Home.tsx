@@ -2,6 +2,7 @@ import Header from "../components/Home/Header"
 import HeaderImage from "../components/Home/HeaderImage"
 import SearchInput from "../components/Home/SearchInput"
 import SectDetails from "../components/Home/SectDetails"
+import Team from "../components/Home/Team"
 import WPSAU from "../components/Home/WPSAU"
 import { homeSec } from "../constant"
 
@@ -35,6 +36,9 @@ const Home = () => {
           <WPSAU />
         </section>
       </div>
+      <section className="py-20 ">
+        <Team />
+      </section>
     </main>
       
    

@@ -5,4 +5,10 @@ interface HomeSection {
     text: string;
     btnText: string;
   }
+
+  interface team {
+    name: string,
+    role: string,
+    image:string
+  }
   

@@ -1,3 +1,4 @@
+import { bayo, chloe, david } from "../public/images"
 import { calenderTwo, collaboration, team } from "../public/svgs"
 
 export const menuLink = [
@@ -39,4 +40,24 @@ export const homeSec: HomeSection[] = [
     text: "Work effortlessly on your projects no matter where you are. Sign up now and bring your ideas to life from anywhere in the world.",
     btnText: "learn more"
   }
+]
+
+export const teams:team[] = [
+  {
+    name: "chloe Fisher",
+    role: "co-founder",
+    image: chloe
+  },
+
+  {
+    name: "david Bryan",
+    role: "ceo & co-founder",
+    image: david
+  },
+
+  {
+    name: "Bayo Adeyemi",
+    role: "partner",
+    image: bayo
+  },
 ]
