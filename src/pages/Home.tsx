@@ -35,8 +35,8 @@ const Home = () => {
         <section>
           <WPSAU />
         </section>
-      </div>
-      <section className="py-20 ">
+      </div> 
+      <section className="py-20 mb-10">
         <Team />
       </section>
     </main>

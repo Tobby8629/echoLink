@@ -1,10 +1,10 @@
-import { logo } from '../../../public/svgs'
+import { edge_two, logo } from '../../../public/svgs'
 import { otherLink, socials } from '../../constant'
 import SearchInput from '../Home/SearchInput'
 
 const Footer = () => {
   return (
-    <div className='bg-[#EFD1F3] py-10'>
+    <div className='bg-[#EFD1F3] py-10 relative '>
       <section className='max-sm:!m-0 md:flex justify-between lg:w-[85%]' >
         <div className='max-sm:w-[85%] w-[268px]'>
           <img src={logo} alt='logo' />
@@ -35,6 +35,9 @@ const Footer = () => {
           </div>
         </div>
       </section>
+      <div className='absolute -top-[160px] -right-[20px] -z-50 w-[300px]'>
+        <img src={edge_two} alt='edge' className='w-full'/>
+      </div>
     </div>
   )
 }
