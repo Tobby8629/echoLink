@@ -10,6 +10,11 @@ import collaboration from './collaboration.svg'
 import team from './team.svg'
 import edge from './edge.svg'
 import stars from './stars.svg'
+import facebook from './facebook.svg'
+import linkedIn from './linkedIn.svg'
+import insta from './insta.svg'
+import X from './X.svg'
+import git from './git.svg'
 
 
 export {
@@ -25,4 +30,9 @@ export {
   team,
   edge,
   stars,
+  facebook,
+  linkedIn,
+  insta,
+  X,
+  git
 }

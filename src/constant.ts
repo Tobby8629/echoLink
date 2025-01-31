@@ -1,5 +1,5 @@
 import { bayo, chloe, david } from "../public/images"
-import { calenderTwo, collaboration, team } from "../public/svgs"
+import { calenderTwo, collaboration, facebook, git, insta, linkedIn, team, X } from "../public/svgs"
 
 export const menuLink = [
   {
@@ -60,4 +60,41 @@ export const teams:team[] = [
     role: "partner",
     image: bayo
   },
+]
+
+export const socials = [
+  facebook,
+  linkedIn,
+  insta,
+  X,
+  git
+]
+
+export const otherLink = [
+  {
+    header: "company",
+    links: [
+      "product",
+      "blog",
+      "support"
+    ]
+  },
+  {
+    header: "features",
+    links: [
+      "screen sharing",
+      "ios andriod app",
+      "file sharing",
+      "user management"
+    ]
+  },
+  {
+    header: "contact us",
+    links: [
+      "info@teaminfo.com",
+      "4-500-210-340",
+      "1010 budapest, hungary"
+    ]
+  }
+
 ]
