@@ -10,6 +10,7 @@ import collaboration from './collaboration.svg'
 import team from './team.svg'
 import edge from './edge.svg'
 import edge_two from './edge2.svg'
+import blogEdge from './blogEdge.svg'
 import stars from './stars.svg'
 import facebook from './facebook.svg'
 import linkedIn from './linkedIn.svg'
@@ -36,5 +37,6 @@ export {
   linkedIn,
   insta,
   X,
-  git
+  git,
+  blogEdge
 }

@@ -23,17 +23,20 @@
   box-sizing: border-box;
 }
 
-section {
-  max-width: 1280px;
-  margin: auto;
-  padding: 0 1rem ;
-}
+ body {
+  background-color: whitesmoke;
+  }
+
+  section {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0 1rem ;
+  }
 
 
-
-.header {
-  @apply min-h-screen overflow-hidden bg-homeHeader bg-cover bg-center px-8 pt-32 max-sm:px-4 md:px-24 lg:px-0
-}
+  .header {
+    @apply min-h-screen overflow-hidden bg-homeHeader bg-cover bg-center px-8 pt-32 max-sm:px-4 md:px-24 lg:px-0
+  }
 
   .header_text,
   .header_text_regular {
@@ -86,19 +89,40 @@ section {
   .searchInput {
     @apply p-2 bg-transparent max-sm:w-[calc(100%-44px)] md:w-[calc(100%-56px)];
   }
+
+  .blog_header {
+    background-image:  url("../public/svgs/blogBG.svg");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   
 
-.menu_btn {
-  background: linear-gradient(to right, rgb(232 168 240),  rgba(251, 237, 233, 1));
-  height: 56px;
-}
+  .menu_btn {
+    background: linear-gradient(to right, rgb(232 168 240),  rgba(251, 237, 233, 1));
+    height: 56px;
+  }
 
-.wpsau_swiper {
-  width: 100%;
-}
+  .card {
+    @apply text-left rounded-lg bg-white relative max-sm:w-[90%] max-sm:mx-auto mb-10 w-[320px] max-w-[350px] xl:w-[367px];
+    box-shadow: 0px 0px 3px 1px rgb(254, 254, 254);
+  }
 
-@media (min-width: 768px) {
   .wpsau_swiper {
-    width: calc(100% - 400px);
-  }  
-}
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+
+    section {
+      padding: 0 2rem;
+    }
+
+    .wpsau_swiper {
+      width: calc(100% - 400px);
+    }  
+  }
